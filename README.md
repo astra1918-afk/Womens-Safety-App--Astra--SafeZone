@@ -260,29 +260,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Google** for location services
 - **React Native** and **Node.js** communities
 
-## 🚀 Roadmap
-
-### Short-term (3-6 months)
-- [ ] Additional Indian language support (Tamil, Telugu, Marathi)
-- [ ] Smartwatch integration for enhanced monitoring
-- [ ] Offline AI processing capabilities
-- [ ] Advanced stress pattern recognition
-
-### Medium-term (6-12 months)
-- [ ] Computer vision integration for visual distress detection
-- [ ] Community safety network features
-- [ ] Predictive analytics for safety recommendations
-- [ ] Corporate and educational institution deployments
-
-### Long-term (1-2 years)
-- [ ] Government emergency services integration
-- [ ] International market expansion
-- [ ] Advanced AI model training with user data
-- [ ] Augmented reality safety guidance features
-
----
 
 **Built with ❤️ for women's safety and peace of mind**
-#   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e  
- #   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e  
+#   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e 
+ 
+ #   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e 
+ 
  
