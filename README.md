@@ -48,9 +48,7 @@
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/sakhi-suraksha.git
-cd astra
+
 
 # Install dependencies
 npm install
@@ -171,7 +169,6 @@ astra/
 ```bash
 # Development
 npm run dev              # Start development server
-npm run dev:mobile       # Start with mobile optimization
 npm run dev:debug        # Start with debug logging
 
 # Database
@@ -179,16 +176,7 @@ npm run db:migrate       # Run database migrations
 npm run db:seed          # Seed database with test data
 npm run db:reset         # Reset database
 
-# Testing
-npm test                 # Run test suite
-npm run test:ai          # Test AI voice recognition
-npm run test:emergency   # Test emergency response
-npm run test:e2e         # End-to-end testing
 
-# Production
-npm run build            # Build for production
-npm start                # Start production server
-npm run deploy           # Deploy to production
 ```
 
 ## 🧪 Testing
@@ -249,17 +237,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
-## 🙏 Acknowledgments
-
-- **Stanford CoreNLP** team for natural language processing capabilities
-- **Assembly AI** for speech-to-text technology
-- **Meta AI** for Llama 2 language model
-- **Twilio** for communication infrastructure
-- **WhatsApp Business** for messaging platform
-- **Google** for location services
-- **React Native** and **Node.js** communities
-
+=
 
 **Built with ❤️ for women's safety and peace of mind**
 #   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e 
@@ -267,3 +245,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
  #   W o m e n s - S a f e t y - A p p - - A s t r a - - S a f e Z o n e 
  
  
+
