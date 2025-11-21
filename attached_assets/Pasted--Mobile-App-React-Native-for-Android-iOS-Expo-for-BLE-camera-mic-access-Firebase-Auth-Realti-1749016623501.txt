@@ -1,0 +1,63 @@
+📱 Mobile App
+React Native for Android & iOS
+Expo for BLE & camera/mic access
+Firebase: Auth, Realtime DB, Cloud Storage
+WebRTC / Agora SDK: Real-time video/audio streaming
+🌍 Maps & Routing
+OpenStreetMap API
+Crowd-sourced danger heatmaps
+Geofencing with MapBox SDK / custom logic
+🔗 IoT & BLE Integration
+Bluetooth Low Energy (BLE) – for pairing wearables
+MQTT Protocol – for wearable-to-app alerts
+Raspberry Pi/Arduino Nano – optional prototyping
+GATT Server – if smartwatch supports direct communication
+🌐 Backend
+Flask or Django – RESTful API server with AI integration
+Node.js + WebSocket – optional for real-time streams
+MongoDB/PostgreSQL – flexible data handling
+SendGrid/Twilio – messaging and alerts
+🔐 Security
+AES-256 – Encryption for stored files
+HTTPS & JWT – API communication
+IPFS + Blockchain (Polygon/Ethereum) – For immutable evidence hashes
+🧱 System Architecture (Simplified)
+
+[Bluetooth Watch Button] --> BLE Signal --> [React Native App]
+[Microphone Input] --> AssemblyAI --> CoreNLP --> LLaMA 2 (Threat Analysis)
+
+IF Distress Detected:
+ --> Trigger Alert
+    --> Live Stream via WebRTC
+    --> Location Sent via Firebase Dynamic Link
+    --> Media Encrypted & Stored (Firebase / AWS S3)
+    --> Alert Contacts via Twilio SMS / SendGrid Email
+
+Geo Module: [OpenStreetMap] + [User Reports] + [Crime APIs] --> Route Suggestions & Safe Zones
+📅 Development Roadmap
+
+🔹 Phase 1: Core MVP
+ React Native app with Firebase login
+ Manual SOS + Shake Detection
+ Trusted contacts + live location
+ Basic BLE integration with smartwatch
+🔹 Phase 2: AI & Streaming
+ Integrate AssemblyAI + CoreNLP
+ Local LLaMA 2 sentiment classifier (offline)
+ Video/audio streaming to contacts
+ Cloud storage of evidence
+🔹 Phase 3: Smart Triggers & IoT
+ BLE panic button fully functional
+ Safe route + crime heatmap integration (OpenStreetMap)
+ Crowdsourced map & group alerts
+🔹 Phase 4: Stealth & Blockchain
+ Disguised UI mode (calculator app)
+ Blockchain evidence log via IPFS
+ Fake call + helpline integration
+ Final user testing and deployment
+🧩 Optional Expansion Ideas
+
+Integration with local law enforcement APIs for direct dispatch.
+Support for elderly, disabled, or children with custom UI modes.
+Voice biometrics for user authentication in stealth mode.
+Integration with Apple/Google Health APIs for sensor-based triggers.

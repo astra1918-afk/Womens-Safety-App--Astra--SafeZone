@@ -1,0 +1,169 @@
+AI-powered, IoT-integrated Women’s Safety App – Speech SOS, organized by category:
+
+🔐 Core Emergency Features
+
+1. Emergency SOS Button
+Description: A panic button within the mobile app or on a wearable device.
+Function:
+Sends immediate alerts to trusted contacts.
+Includes location (GPS), timestamp, and user identity.
+Works offline (via SMS if internet is down).
+2. Voice-Activated SOS
+Description: Trigger an emergency alert by speaking a keyword like “Help me!”
+Technologies:
+AssemblyAI: Converts live speech to text.
+Stanford CoreNLP: Parses speech grammar.
+LLaMA 2 13B CPP: Detects emotional stress or panic tone.
+Function:
+Detects urgent words and panic tone.
+Triggers the same flow as the SOS button.
+3. Shake-to-Alert
+Description: Shaking the phone (3 times or more) sends an SOS.
+Function:
+Useful when voice or screen is inaccessible.
+Configurable sensitivity.
+Runs even with screen locked.
+4. Auto Audio/Video Streaming to Contacts
+Description: Live stream from the user's camera and microphone.
+Function:
+Begins recording when SOS is triggered.
+Streams via WebRTC or Agora SDK to trusted contacts.
+Link is shared instantly via SMS or push notifications.
+Media is uploaded and backed up (Firebase / AWS S3).
+Evidence is encrypted using AES.
+5. Live Location Tracking
+Description: Shares user’s real-time location.
+Function:
+Secure, real-time updates using Firebase or backend API.
+Users can allow tracking temporarily (till safe).
+6. Geofencing Alerts
+Description: Virtual safety zones and danger zones.
+Function:
+Alerts users when entering high-crime areas.
+Parents can define “safe zones” like home, school, etc.
+Uses OpenStreetMap + custom API.
+7. Fake Call Feature
+Description: Simulates a call from a friend, police, or guardian.
+Function:
+Helps escape dangerous or uncomfortable situations.
+User can select male/female voices and scenarios.
+8. Discreet Mode
+Description: App hides under a fake icon (e.g., calculator).
+Function:
+Prevents attacker from identifying the safety app.
+Can be launched with a hidden tap pattern.
+🧠 AI/ML & Smart Detection
+
+9. Distress Sound Recognition
+Description: Detects screaming, breaking glass, crying, etc.
+Tech Stack:
+Librosa (feature extraction)
+TensorFlow/Keras or PyTorch (model training)
+Function:
+Triggers alerts even if no keyword is spoken.
+10. Suspicious Activity Recognition (Camera)
+Description: Detects violence, weapons, or aggressive behavior using video.
+Tech: OpenCV + YOLOv5/MobileNet
+Use Case:
+Works with device camera or connected CCTV feeds.
+11. Safe Route Suggestion
+Description: Suggests safest routes to a destination.
+Tech Stack:
+OpenStreetMap
+Crime heatmap overlay
+AI models using public datasets and user reports
+Function:
+Avoids areas with high crime rate or recent user reports.
+12. Crowdsourced Danger Reports
+Description: Users can tag unsafe locations.
+Function:
+Map overlays show user-generated danger zones.
+AI scrapes Twitter & news APIs to update warnings.
+13. Behavior-Based Trigger Prediction
+Description: Learns user routine and predicts threat.
+Function:
+Anomalies like unusual time/place or stationary location for too long trigger checks or alerts.
+14. Multi-User Emergency Mode
+Description: If multiple users in a vicinity raise alerts, nearby authorities are notified.
+Function:
+Prevents mass-scale threats (e.g., stalking, bus/train dangers).
+Crowd-based threat estimation.
+👩‍💼 Utility & Accessibility
+
+15. Community Alert System
+Description: Sends alerts to verified nearby users.
+Function:
+Uses geolocation and Firebase Cloud Messaging (FCM).
+Nearby users can offer help or call for it.
+16. Self-Defense Tips & Tutorials
+Description: Short videos, guides, and practice tools.
+Content:
+Legal rights, pepper spray use, martial arts basics.
+17. Helpline Directory
+Description: One-click access to:
+Police (100)
+Women’s helpline (1091)
+Medical emergencies (108)
+NGOs and legal aid.
+18. Battery Saver Mode
+Description: Activates low-power safety mode when battery < 10%.
+Function:
+Disables non-critical features.
+Keeps GPS and SOS active.
+19. Trusted Contacts Management
+Description: Add/edit/delete emergency contacts.
+Function:
+Contacts receive live stream links, location, and panic messages.
+Can respond with help messages.
+🔧 Technology-Specific Features
+
+20. Bluetooth Smartwatch SOS Integration
+Description: Connect with BLE-based smartwatches (e.g., Mi Band, Fire-Boltt, NoiseFit).
+Function:
+SOS button on wearable triggers alerts.
+BLE sends signal to mobile app.
+Fast and hands-free.
+21. Offline SOS (SMS Fallback)
+Description: If no internet, app sends SMS-based alert.
+Includes:
+Last known location
+Distress keyword
+Emergency message
+22. Encrypted Storage & Blockchain Hashing
+AES Encryption: For audio/video, logs, and messages.
+Blockchain (Optional):
+Store hash of media files on Ethereum or Polygon.
+Verifiable legal evidence.
+🗺️ Navigation and Map
+
+23. OpenStreetMap Integration
+Function:
+Real-time map for user location.
+Crime zones, user-reported unsafe areas.
+Safe routes with markers.
+24. Firebase Dynamic Link Generation
+Description: Create links to share:
+Live stream
+Current location
+Emergency status
+Benefit: Opens directly in app or browser without installation.
+✅ Final Flow: What Happens on Distress Trigger?
+
+Trigger: Voice, shake, or wearable button.
+Speech Analysis: AssemblyAI → CoreNLP → LLaMA 2 13B for tone detection.
+Immediate Actions:
+Start video/audio recording and live stream.
+Share stream + location via Firebase Dynamic Link.
+Send alerts via Twilio (SMS) or FCM (push).
+Upload encrypted media to cloud.
+Follow-up:
+Keep tracking location.
+Community alerts.
+Fake call starts if selected.
+Helpline and map options available.
+Would you like next:
+
+📱 UI/UX wireframes for the mobile app?
+📦 Starter GitHub template for the backend + mobile app?
+📶 Sample BLE integration code?
+Let me know what you'd like to build first and I’ll guide you step-by-step.

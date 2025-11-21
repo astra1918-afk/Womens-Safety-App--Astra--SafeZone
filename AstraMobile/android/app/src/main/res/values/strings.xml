@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">astra</string>
+    <string name="title_activity_main">astra</string>
+    <string name="package_name">com.astra.sakhi</string>
+    <string name="custom_url_scheme">com.astra.sakhi</string>
+</resources>

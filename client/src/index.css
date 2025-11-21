@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 13% 97%; /* #F8F9FA */
+  --foreground: 220 9% 9%; /* #1A1B1E */
+  --muted: 220 13% 91%; /* #E9ECEF */
+  --muted-foreground: 220 9% 46%; /* #6C757D */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 220 9% 9%; /* #1A1B1E */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 220 9% 9%; /* #1A1B1E */
+  --border: 220 13% 91%; /* #E9ECEF */
+  --input: 220 13% 91%; /* #E9ECEF */
+  --primary: 300 76% 72%; /* #E879F9 */
+  --primary-foreground: 0 0% 98%; /* #FFFFFF */
+  --secondary: 220 13% 91%; /* #E9ECEF */
+  --secondary-foreground: 220 9% 9%; /* #1A1B1E */
+  --accent: 220 13% 91%; /* #E9ECEF */
+  --accent-foreground: 220 9% 9%; /* #1A1B1E */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 0 0% 98%; /* #FFFFFF */
+  --ring: 300 76% 72%; /* #E879F9 */
+  --radius: 0.75rem;
+
+  /* Custom emergency colors */
+  --emergency: 348 83% 47%; /* #E91E63 */
+  --emergency-foreground: 0 0% 98%; /* #FFFFFF */
+  --safe: 122 39% 49%; /* #4CAF50 */
+  --safe-foreground: 0 0% 98%; /* #FFFFFF */
+  --danger: 0 68% 42%; /* #D32F2F */
+  --danger-foreground: 0 0% 98%; /* #FFFFFF */
+}
+
+.dark {
+  --background: 220 13% 9%; /* #1A1B1E */
+  --foreground: 0 0% 98%; /* #FAFAFA */
+  --muted: 220 13% 15%; /* #262B32 */
+  --muted-foreground: 220 9% 64%; /* #9CA3AF */
+  --popover: 220 13% 9%; /* #1A1B1E */
+  --popover-foreground: 0 0% 98%; /* #FAFAFA */
+  --card: 220 13% 9%; /* #1A1B1E */
+  --card-foreground: 0 0% 98%; /* #FAFAFA */
+  --border: 220 13% 15%; /* #262B32 */
+  --input: 220 13% 15%; /* #262B32 */
+  --primary: 300 76% 72%; /* #E879F9 */
+  --primary-foreground: 0 0% 98%; /* #FFFFFF */
+  --secondary: 220 13% 15%; /* #262B32 */
+  --secondary-foreground: 0 0% 98%; /* #FAFAFA */
+  --accent: 220 13% 15%; /* #262B32 */
+  --accent-foreground: 0 0% 98%; /* #FAFAFA */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 0 0% 98%; /* #FFFFFF */
+  --ring: 207 90% 54%; /* #1565C0 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .emergency-pulse {
+    animation: emergency-pulse 2s infinite;
+  }
+
+  .emergency-bg {
+    background-color: hsl(var(--emergency));
+    color: hsl(var(--emergency-foreground));
+  }
+
+  .safe-bg {
+    background-color: hsl(var(--safe));
+    color: hsl(var(--safe-foreground));
+  }
+
+  .danger-bg {
+    background-color: hsl(var(--danger));
+    color: hsl(var(--danger-foreground));
+  }
+
+  .text-emergency {
+    color: hsl(var(--emergency));
+  }
+
+  .text-safe {
+    color: hsl(var(--safe));
+  }
+
+  .text-danger {
+    color: hsl(var(--danger));
+  }
+
+  .bg-emergency {
+    background-color: hsl(var(--emergency));
+  }
+
+  .bg-safe {
+    background-color: hsl(var(--safe));
+  }
+
+  .bg-danger {
+    background-color: hsl(var(--danger));
+  }
+
+  .max-w-mobile {
+    max-width: 428px;
+  }
+}
+
+@keyframes emergency-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 428px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Voice recognition animation */
+.voice-listening {
+  animation: voice-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes voice-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
